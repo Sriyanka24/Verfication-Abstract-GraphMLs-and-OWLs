@@ -1,0 +1,67 @@
+python verfication.py 
+
+
+AWS
+AWS Nodes from GraphML
+{'AWS User', 'Model Monitoring Job', 'S3 Bucket', 'Custom VPC', 'SageMaker Container Images CI/CD CodePipeline', 'SageMaker Endpoint', 'Triggers/Scheduler AWS', 'CloudWatch Metrics and Alarm', 'Feature Engineering and Data Labeling', 'SageMaker Notebook', 'SageMaker Model Registry', 'AWS CodeBuild and SageMaker Docker Image', 'SageMaker ML Pipeline', 'Amazon EventBridge', 'ECR', 'Model Deployment CodePipeline', 'AWS CodeBuild and AWS Lambda', 'Model Training/Retraining CodePipeline', 'AWS CodeCommit for EDA', 'AWS CodeCommit and AWS CodeBuild', 'AWS CodeCommit', 'CloudFormation'}
+
+
+AWS Edges from GraphML
+{'Executes CFN template', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'Data Transformation', 'Training data', 'Stores to the Registry if passed the evaluation', 'Triggers if the image is updated in the Registry', 'Test data', 'Triggers if the model is updated in the Registry', 'Data validation', 'Deploys as a Serving app', 'Scheduled Events', 'Experiments', 'Triggers ML Pipeline', 'Triggers CI/CD if there is a change in the code', 'Stores Docker image/ Artifacts', 'Source code integration', 'Alerts', 'Monitors new data', 'Monitoring', 'Feature Engineering'}    
+
+
+AWS Nodes from OWL
+{'AWS User', 'Model Monitoring Job', 'S3 Bucket', 'Model Serving', 'Data Processing', 'Custom VPC', 'AWS', 'SageMaker Container Images CI/CD CodePipeline', 'Abstract', 'SageMaker Endpoint', 'Source Code Repo', 'CI/CD steps', 'Workspace', 'Training/Retraining Pipeline', 'Model Release/Deployment', 'Triggers/Scheduler AWS', 'CloudWatch Metrics and Alarm', 'Feature Engineering and Data Labeling', 'Triggers/Scheduler', 'User', 'Cloud Storage', 'SageMaker Notebook', 'SageMaker Model Registry', 'AWS CodeBuild and SageMaker Docker Image', 'Artifact Registry', 'Model Deployment', 'Train and Evaluate', 'SageMaker ML Pipeline', 'Model Registry', 'Managing/Monitoring Model', 'Amazon EventBridge', 'ECR', 'Model Deployment CodePipeline', 'AWS CodeBuild and AWS Lambda', 'Model Training/Retraining CodePipeline', 'AWS CodeCommit for EDA', 'AWS CodeCommit and AWS CodeBuild', 'AWS CodeCommit', 'CloudFormation', 'CI/CD Pipeline'}
+
+
+AWS Edges from OWL
+{'Data Transformation', 'Executes CFN template', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'partOf', 'Training data', 'Stores to the Registry if passed the evaluation', 'Triggers if the image is updated in the Registry', 'AWS', 'Triggers if the model is updated in the Registry', 'Test data', 'Data validation', 'Deploys as a Serving app', 'Scheduled Events', 'belongsTo', 'Experiments', 'Triggers ML Pipeline', 'Triggers CI/CD if there is a change in the code', 'Stores Docker image/ Artifacts', 'Source code integration', 'Alerts', 'Monitors new data', 'Model Status Change Event Rule', 'Monitoring', 'Feature Engineering'}
+
+
+Verifying AWS Abstract GraphML elements against AWS Abstract OWL elements
+All nodes from GraphML are present in OWL.
+All properties from GraphML are present in OWL.
+
+
+Azure
+Azure Nodes from GraphML
+{'AML Compute Train and Evaluate', 'AML Retraining Pipeline', 'Azure DevOps Release Pipeline', 'AML Model Management', 'Continuous Integration', 'Azure DevOps Build Pipeline', 'Azure User', 'AML Model Registry', 'Data Prep and Validation', 'Azure Repos', 'Azure Container Registry', 'Azure Blob Storage', 'Data Sanity and Unit Tests', 'AML Model Serving/ Scoring services', 'Application Insights', 'Azure Machine Learning pipeline endpoint', 'AML Workspace'}    
+
+
+Azure Edges from GraphML
+{'Data Transformation', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'Stores Artifacts', 'Pushes code to the repo', 'Source code integration', 'Deploys as a Serving app', 'Publish Machine Learning Pipeline', 'Monitors new data', 'Model performance data', 'Test data', 'Experiments', 'Triggers CI/CD if there is a change in the code', 'Training data', 'Stores to the Registry if passed the evaluation', 'Monitoring', 'Triggers Data-driven Schedule-driven Metrics-driven', 'Triggers if the model is updated in the Registry'}
+
+
+Azure Nodes from OWL
+{'Model Serving', 'AML Model Serving/ Scoring services', 'CI/CD Pipeline', 'Application Insights', 'Data Processing', 'Abstract', 'Azure User', 'Azure DevOps Build Pipeline', 'Continuous Integration', 'Source Code Repo', 'CI/CD steps', 'Data Prep and Validation', 'Workspace', 'Azure Repos', 'Training/Retraining Pipeline', 'Azure Container Registry', 'Model Release/Deployment', 'Triggers/Scheduler', 'User', 'AML Retraining Pipeline', 'Cloud Storage', 'Artifact Registry', 'Model Deployment', 'Train and Evaluate', 'Azure Blob Storage', 'Data Sanity and Unit Tests', 'Model Registry', 'Managing/Monitoring Model', 'AML Workspace', 'AML Compute Train and Evaluate', 'AML Model Management', 'Azure DevOps Release Pipeline', 'AML Model Registry', 'Azure', 'Azure Machine Learning pipeline endpoint'}
+
+
+Azure Edges from OWL
+{'Data Transformation', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'Stores Artifacts', 'Model performance data', 'partOf', 'Feature Engineering', 'Training data', 'Stores to the Registry if passed the evaluation', 'Triggers if the image is updated in the Registry', 'Triggers if the model is updated in the Registry', 'Test data', 'Deploys as a Serving app', 'belongsTo', 'Pushes code to the repo', 'Publish Machine Learning Pipeline', 'Experiments', 'Triggers CI/CD if there is a change in the code', 'Stores Docker image/ Artifacts', 'Source code integration', 'Alerts', 'Monitors new data', 'Azure', 'Monitoring', 'Triggers Data-driven Schedule-driven Metrics-driven'}
+
+
+Verifying Azure Abstract GraphML elements against Azure Abstract OWL elements
+All nodes from GraphML are present in OWL.
+All properties from GraphML are present in OWL.
+
+
+Google
+Google Nodes from GraphML
+{'Vertex AI Train and Evaluate', 'Cloud Functions SDK', 'Pub/Sub', 'CI/CD Vertex AI Pipeline', 'Vertex AI Workbench', 'Release gateway', 'Triggers/Scheduler Google', 'Cloud Scheduler', 'Dataflow', 'Vertex AI Feature Store', 'Cloud Composer', 'Google Cloud Storage', 'Cloud Build', 'GCP User', 'Vertex AI Model Registry', 'Vertex AI Prediction', 'Vertex AI Model Monitor', 'Cloud Source Repositories', 'Vertex AI Training/Retraining Pipeline', 'GCP Artifact Registry', 'Model Deployment and Monitoring'}
+
+
+Google Edges from GraphML
+{'Data Transformation', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'Deploy and run', 'Feature Engineering', 'Training data', 'Stores to the Registry if passed the evaluation', 'Triggers if the model is updated in the Registry', 'Test data', 'Trigger Cloud Build', 'Push Docker images', 'Triggers', 'Evaluation Metrics', 'Event-driven', 'Experiments', 'Triggers CI/CD if there is a change in the code', 'Pull container images', 'Publishes messages on a schedule', 'Data Validation', 'Alerts', 'Monitors new data', 'Monitoring', 'Triggers if the image is updated in the Registry'}
+
+
+Google Nodes from OWL
+{'Vertex AI Train and Evaluate', 'Cloud Functions SDK', 'Pub/Sub', 'CI/CD Vertex AI Pipeline', 'Model Serving', 'Vertex AI Workbench', 'Release gateway', 'Data Processing', 'Google', 'Abstract', 'Cloud Scheduler', 'Triggers/Scheduler Google', 'Dataflow', 'Source Code Repo', 'CI/CD steps', 'Vertex AI Feature Store', 'Workspace', 'Training/Retraining Pipeline', 'Model Release/Deployment', 'Triggers/Scheduler', 'Cloud Composer', 'Google Cloud Storage', 'Cloud Build', 'User', 'Cloud Storage', 'Artifact Registry', 'Model Deployment', 'Train and Evaluate', 'GCP User', 'Model Registry', 'Vertex AI Model Registry', 'Managing/Monitoring Model', 'Vertex AI Prediction', 'Vertex AI Model Monitor', 'Cloud Source Repositories', 'GCP Artifact Registry', 'Model Deployment and Monitoring', 'Vertex AI Training/Retraining Pipeline', 'CI/CD Pipeline'}
+
+
+Google Edges from OWL
+{'Data Transformation', 'Triggers retraining if new data is available/ on degraded performance/ based on Scheduler', 'Deploy and run', 'partOf', 'Training data', 'Stores to the Registry if passed the evaluation', 'Triggers if the image is updated in the Registry', 'Google', 'Test data', 'Triggers if the model is updated in the Registry', 'Trigger Cloud Build', 'Deploys as a Serving app', 'Push Docker images', 'Triggers', 'Evaluation Metrics', 'belongsTo', 'Event-driven', 'Experiments', 'Triggers CI/CD if there is a change in the code', 'Pull container images', 'Publishes messages on a schedule', 'Stores Docker image/ Artifacts', 'Data Validation', 'Source code integration', 'Alerts', 'Monitors new data', 'Monitoring', 'Feature Engineering'}
+
+
+Verifying Google Abstract GraphML elements against Google Abstract OWL elements
+All nodes from GraphML are present in OWL.
+All properties from GraphML are present in OWL.
